@@ -1,0 +1,82 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/build
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+# package-lock
+package-lock.json
+
+# sonar properties
+sonar-project.properties
+.scannerwork/
+.sonar/
+.sonar_lock
+sonar-scanner*
+settings.json
+
+
+.sonarlint/connectedMode.json
+test-output*.txt
+test-result*.txt
+test-bank-cov.txt
+test-bank-output*.txttest-bank-cov.txt
+test-bank-output*.txt
+sonarqube_mcp*
+test-entity*
+test-holder*
+test-errors.txt
+test-cr-coverage.txt
+test-data-svc*.txt
+test-svc*
+test_output*.txt
+test-nominee*
+test-run-output*.txt
+test-branch-cov.txt
+banktab-output*.txt
+build-output*.txt
+clientlog-output*.txt
+debit-output*.txt
+test-auth-output*.txt
+test-auth-cov.txt
+test-sb-cov*.txt
+test-sb-output*.txt
+test-wl-output*.txt
