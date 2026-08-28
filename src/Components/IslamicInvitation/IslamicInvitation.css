@@ -1,0 +1,227 @@
+.islamic{
+
+    width:100%;
+
+    padding:100px 20px;
+
+    background:#fbf8f4;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.islamic-container{
+
+    width:100%;
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+.arabic{
+
+    font-size:42px;
+
+    color:#6a3f2d;
+
+    line-height:70px;
+
+    margin-bottom:25px;
+
+}
+
+.translation{
+
+    font-size:18px;
+
+    color:#7b685e;
+
+    font-style:italic;
+
+    line-height:30px;
+
+}
+
+.divider{
+
+    width:120px;
+
+    height:2px;
+
+    background:#c6a46a;
+
+    margin:40px auto;
+
+}
+
+.intro{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:35px;
+
+    color:#6f5b4e;
+
+}
+
+.family-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    margin-top:70px;
+
+    flex-wrap:wrap;
+
+}
+
+.family-card{
+
+    width:320px;
+
+    padding:35px;
+
+    border:1px solid #e7d7c4;
+
+    border-radius:18px;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.family-card h3{
+
+    color:#b58850;
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.family-card h4{
+
+    font-size:30px;
+
+    color:#4d2d2d;
+
+    margin-bottom:18px;
+
+}
+
+.family-card p{
+
+    color:#7a665d;
+
+    margin-bottom:12px;
+
+}
+
+.family-card h5{
+
+    font-size:22px;
+
+    color:#5b3b30;
+
+    margin:8px 0;
+
+}
+
+.family-card span{
+
+    display:block;
+
+    margin:6px 0;
+
+    color:#b58850;
+
+    font-size:20px;
+
+}
+
+.dua{
+
+    margin-top:70px;
+
+    max-width:700px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.dua p{
+
+    font-size:18px;
+
+    color:#6d574d;
+
+    line-height:34px;
+
+    font-style:italic;
+
+}
+
+@media(max-width:768px){
+
+.arabic{
+
+font-size:28px;
+
+line-height:52px;
+
+}
+
+.translation{
+
+font-size:15px;
+
+}
+
+.intro{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+.family-card{
+
+width:100%;
+
+}
+
+.family-card h4{
+
+font-size:24px;
+
+}
+
+.dua p{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+}

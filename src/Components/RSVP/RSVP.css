@@ -1,0 +1,404 @@
+.rsvp {
+  width: 100%;
+  padding: 100px 20px;
+  background: #fffaf6;
+}
+
+.rsvp-container {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+.rsvp-small-title {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #9b6d68;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.rsvp-title {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  font-weight: 500;
+  color: #5b3434;
+  margin: 0 0 12px;
+}
+
+.rsvp-subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  color: #806b63;
+  margin-bottom: 45px;
+}
+
+.rsvp-card {
+  background: white;
+
+  padding: 55px 45px 40px;
+
+  border-radius: 25px;
+
+  border: 1px solid #eadcd4;
+
+  box-shadow:
+    0 12px 40px rgba(91, 52, 52, 0.08);
+}
+
+.top-heart {
+  width: 58px;
+  height: 58px;
+
+  margin: -85px auto 25px;
+
+  border-radius: 50%;
+
+  background: #6b1f2a;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 21px;
+
+  box-shadow:
+    0 8px 20px rgba(107, 31, 42, 0.2);
+}
+.rsvp-card h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 25px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  color: #5b3434;
+
+  margin: 0 0 32px;
+}
+.form-group {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+
+  font-size: 14px;
+
+  color: #654646;
+
+  margin-bottom: 9px;
+
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 14px 15px;
+
+  border: 1px solid #dfccc4;
+
+  border-radius: 9px;
+
+  background: #fffdfb;
+
+  color: #5b3434;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #9b6068;
+
+  box-shadow:
+    0 0 0 3px rgba(155, 96, 104, 0.08);
+}
+
+.attendance-options {
+  display: flex;
+
+  gap: 12px;
+}
+
+.attendance-btn {
+  flex: 1;
+
+  min-height: 52px;
+
+  padding: 12px;
+
+  border-radius: 9px;
+
+  border: 1px solid #dfccc4;
+
+  background: #fffdfb;
+
+  color: #68494b;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.attendance-btn:hover {
+  border-color: #9b6068;
+
+  transform: translateY(-1px);
+}
+
+.attendance-btn.selected {
+  color: white;
+
+  border-color: transparent;
+}
+
+.yes-selected {
+  background: #6b1f2a;
+}
+
+.no-selected {
+  background: #8b6b66;
+}
+
+.submit-rsvp {
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #6b1f2a;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  transition: 0.3s;
+}
+
+.submit-rsvp:hover {
+  background: #812f3b;
+
+  transform: translateY(-2px);
+}
+
+.submit-rsvp:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+.rsvp-footer {
+  margin-top: 25px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  color: #8a746d;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+.rsvp-success {
+  background: white;
+
+  padding: 60px 35px;
+
+  border-radius: 25px;
+
+  border: 1px solid #eadcd4;
+
+  box-shadow:
+    0 12px 40px rgba(91, 52, 52, 0.08);
+}
+
+.success-heart {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 22px;
+
+  border-radius: 50%;
+
+  background: #6b1f2a;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 27px;
+}
+
+.success-small {
+  font-size: 11px;
+
+  letter-spacing: 4px;
+
+  color: #9b6d68;
+}
+
+.rsvp-success h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 38px;
+
+  font-weight: 500;
+
+  line-height: 1.3;
+
+  color: #5b3434;
+
+  margin: 15px 0 20px;
+}
+
+.rsvp-success p {
+  color: #806f68;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.success-divider {
+  margin: 28px 0;
+
+  color: #9b6d68;
+
+  font-size: 22px;
+}
+
+.rsvp-success h3 {
+  font-family: "Playfair Display", serif;
+
+  color: #6b1f2a;
+
+  font-size: 27px;
+
+  font-weight: 500;
+
+  margin: 0 0 8px;
+}
+
+.success-date {
+  color: #92766e;
+
+  font-size: 14px;
+
+  letter-spacing: 2px;
+}
+
+.another-response {
+  margin-top: 30px;
+
+  padding: 11px 20px;
+
+  border: 1px solid #d9c0b8;
+
+  background: white;
+
+  color: #6b1f2a;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.another-response:hover {
+  background: #fff6f2;
+}
+
+@media (max-width: 768px) {
+
+  .rsvp {
+    padding: 80px 16px;
+  }
+
+  .rsvp-title {
+    font-size: 42px;
+  }
+
+  .rsvp-card {
+    padding: 50px 20px 35px;
+  }
+
+  .attendance-options {
+    flex-direction: column;
+  }
+
+  .attendance-btn {
+    width: 100%;
+  }
+
+  .rsvp-success {
+    padding: 50px 20px;
+  }
+
+  .rsvp-success h2 {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .rsvp-title {
+    font-size: 38px;
+  }
+
+  .rsvp-card {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .rsvp-success h2 {
+    font-size: 29px;
+  }
+}

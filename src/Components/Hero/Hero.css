@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  background: #f7f3ee;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  min-height: 100svh;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+}
+
+.hero-background {
+  position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  object-position: center center;
+
+  display: block;
+
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.20);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+
+  z-index: 5;
+
+  width: 90%;
+  max-width: 500px;
+
+  text-align: center;
+
+  margin: auto;
+}
+
+.family {
+  font-size: 14px;
+
+  letter-spacing: 3px;
+
+  color: #7a5d4f;
+
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+}
+
+.bride,
+.groom {
+  font-size: 70px;
+
+  color: #4d2c2c;
+
+  font-weight: 500;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  line-height: 1.05;
+}
+
+.heart {
+  margin: 20px 0;
+
+  font-size: 18px;
+
+  color: #9a3946;
+}
+
+.divider {
+  width: 120px;
+
+  height: 1px;
+
+  background: #b88b5a;
+
+  margin: 35px auto;
+}
+
+.invite {
+  font-size: 18px;
+
+  line-height: 32px;
+
+  color: #6d5247;
+
+  padding: 0 10px;
+}
+
+.date {
+  margin-top: 35px;
+
+  font-size: 20px;
+
+  letter-spacing: 3px;
+
+  color: #7a4b33;
+}
+
+@media (max-width: 1024px) {
+
+  .hero-background {
+    object-fit: cover;
+
+    object-position: center center;
+  }
+
+  .bride,
+  .groom {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    width: 100%;
+
+    height: 100svh;
+    min-height: 100svh;
+
+    overflow: hidden;
+  }
+
+  .hero-background {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    object-position: center center;
+  }
+
+  .hero-content {
+    width: 90%;
+
+    max-width: 480px;
+
+    padding: 25px 10px;
+  }
+
+  .family {
+    font-size: 12px;
+
+    letter-spacing: 2.5px;
+
+    margin-bottom: 30px;
+
+    line-height: 1.5;
+  }
+
+  .bride,
+  .groom {
+    font-size: clamp(42px, 9vw, 55px);
+
+    letter-spacing: 3px;
+
+    line-height: 1.08;
+  }
+
+  .heart {
+    margin: 18px 0;
+
+    font-size: 17px;
+  }
+
+  .divider {
+    width: 100px;
+
+    margin: 28px auto;
+  }
+
+  .invite {
+    font-size: 15px;
+
+    line-height: 28px;
+  }
+
+  .date {
+    margin-top: 28px;
+
+    font-size: 17px;
+
+    letter-spacing: 2.5px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    height: 100svh;
+    min-height: 100svh;
+
+    width: 100%;
+  }
+
+  .hero-background {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+  }
+
+  .hero-content {
+    width: 92%;
+
+    max-width: 400px;
+
+    padding: 20px 5px;
+  }
+
+  .family {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+  }
+
+  .bride,
+  .groom {
+    font-size: clamp(36px, 11vw, 48px);
+
+    letter-spacing: 2px;
+
+    line-height: 1.08;
+  }
+
+  .heart {
+    margin: 15px 0;
+
+    font-size: 16px;
+  }
+
+  .divider {
+    width: 85px;
+
+    margin: 24px auto;
+  }
+
+  .invite {
+    font-size: 14px;
+
+    line-height: 24px;
+
+    padding: 0 8px;
+  }
+
+  .date {
+    margin-top: 24px;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .hero {
+    height: 100svh;
+    min-height: 100svh;
+  }
+
+  .hero-background {
+    position: fixed;
+
+    object-fit: cover;
+
+    object-position: center center;
+  }
+
+  .hero-content {
+    width: 94%;
+
+    padding: 15px 5px;
+  }
+
+  .family {
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 20px;
+  }
+
+  .bride,
+  .groom {
+    font-size: 34px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .heart {
+    margin: 12px 0;
+
+    font-size: 15px;
+  }
+
+  .divider {
+    width: 70px;
+
+    margin: 20px auto;
+  }
+
+  .invite {
+    font-size: 13px;
+
+    line-height: 22px;
+  }
+
+  .date {
+    font-size: 14px;
+
+    letter-spacing: 1.5px;
+
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+  .hero {
+    height: 100svh;
+    min-height: 100svh;
+  }
+
+  .hero-background {
+    position: fixed;
+
+    object-fit: cover;
+
+    object-position: center center;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
+
+  .family {
+    margin-bottom: 12px;
+  }
+
+  .bride,
+  .groom {
+    font-size: 38px;
+  }
+
+  .heart {
+    margin: 8px 0;
+  }
+
+  .divider {
+    margin: 12px auto;
+  }
+
+  .invite {
+    font-size: 13px;
+
+    line-height: 20px;
+  }
+
+  .date {
+    margin-top: 12px;
+
+    font-size: 14px;
+  }
+}

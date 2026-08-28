@@ -1,0 +1,235 @@
+ .countdown {
+  width: 100%;
+
+  padding: 100px 20px;
+
+  position: relative;
+
+
+  background-image: url("../../assets/seabg.png");
+
+  background-size: cover;
+
+  background-position: center;   
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  overflow: hidden;
+}
+
+
+.countdown::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.20);
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+
+.countdown-container {
+  max-width: 1100px;
+
+  margin: auto;
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.countdown-title {
+  font-size: 48px;
+
+  color: #5b3434;
+
+  margin-bottom: 15px;
+}
+
+.countdown-subtitle {
+  font-size: 18px;
+
+  color: #7a665d;
+
+  margin-bottom: 60px;
+
+  line-height: 30px;
+}
+
+
+.countdown-boxes {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+.count-box {
+  width: 150px;
+
+  height: 150px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(234, 220, 207, 0.9);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+
+  backdrop-filter: blur(3px);
+}
+
+.count-box:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.count-box h3 {
+  font-size: 45px;
+
+  color: #6b3d3d;
+
+  margin-bottom: 10px;
+
+  font-weight: 600;
+}
+
+.count-box span {
+  font-size: 16px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  color: #8b5e3c;
+}
+
+.countdown-divider {
+  margin: 60px 0 30px;
+
+  position: relative;
+}
+
+.countdown-divider span {
+  position: relative;
+
+  padding: 0 20px;
+
+  font-size: 30px;
+
+  color: #8b1e2d;
+}
+
+
+.countdown-divider::before {
+  content: "";
+
+  width: 180px;
+
+  height: 1px;
+
+  background: #d9c2b4;
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.countdown-divider span {
+  position: relative;
+
+  padding: 0 20px;
+
+  font-size: 30px;
+
+  color: #8b1e2d;
+}
+
+.countdown-message {
+  font-size: 20px;
+
+  color: #75645c;
+
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+
+  .countdown {
+    padding: 80px 20px;
+
+    background-position: center center;
+
+    background-attachment: scroll;
+  }
+
+  .countdown::before {
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .countdown-title {
+    font-size: 36px;
+  }
+
+  .countdown-subtitle {
+    font-size: 16px;
+
+    margin-bottom: 45px;
+  }
+
+  .countdown-boxes {
+    gap: 15px;
+  }
+
+  .count-box {
+    width: 130px;
+
+    height: 130px;
+  }
+
+  .count-box h3 {
+    font-size: 35px;
+  }
+
+  .count-box span {
+    font-size: 13px;
+  }
+
+  .countdown-message {
+    font-size: 16px;
+
+    line-height: 26px;
+  }
+}
