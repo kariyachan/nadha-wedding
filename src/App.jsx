@@ -1,13 +1,13 @@
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import IslamicInvitation from "./components/IslamicInvitation/IslamicInvitation";
-import Couple from "./components/Couple/Couple";
-import Events from "./components/Events/Events";
-import Countdown from "./components/Countdown/Countdown";
-import Gallery from "./components/Gallery/Gallery";
-import RSVP from "./components/RSVP/RSVP";
-import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
-import Footer from "./components/Footer/Footer";
+import Navbar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero";
+import IslamicInvitation from "./Components/IslamicInvitation/IslamicInvitation";
+import Couple from "./Components/Couple/Couple";
+import Events from "./Components/Events/Events";
+import Countdown from "./Components/Countdown/Countdown";
+import Gallery from "./Components/Gallery/Gallery";
+import RSVP from "./Components/RSVP/RSVP";
+import MusicPlayer from "./Components/MusicPlayer/MusicPlayer";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
